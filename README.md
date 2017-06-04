@@ -48,7 +48,7 @@ git clone <repo> <directory>
 ### git add
 g将该文件添加到缓存区。
 
-### git status
+### git status -s
 查看在上次提交之后是否有修改。加-s 参数，以获得简短的结果输出。如果没加该参数会详细输出内容。
 
 ### git diff 
