@@ -46,32 +46,40 @@ git clone <repo> <directory>
 ## 操作本地仓库
 
 ### git add
-git add 命令可将该文件添加到缓存区。
-```
-$ touch README
-$ touch hello.php
-$ ls
-README		hello.php
-$ git status -s
-?? README
-?? hello.php
-$ git add README hello.php 
-$ git status -s
-A  README
-A  hello.php
-$ 
-```
+g将该文件添加到缓存区。
 
 ### git status
-git status 以查看在你上次提交之后是否有修改。加-s 参数，以获得简短的结果输出。如果没加该参数会详细输出内容。
-
+查看在上次提交之后是否有修改。加-s 参数，以获得简短的结果输出。如果没加该参数会详细输出内容。
 
 ### git diff 
-
-该命令显示已写入缓存与已修改但尚未写入缓存的改动的区别
-
+显示已写入缓存与已修改但尚未写入缓存的改动的区别。
 
 ### git commit
+将缓存区内容添加到仓库中。
+
+### git branch 
+查看当前仓库有哪些分支。
+
+### git branch (branchname)
+创建分支。
+
+### git checkout (branchname)
+切换分支。
+
+### git merge (branchname)
+合并（branchname）至当前分支。
+
+### git branch -d (branchname)
+删除分支。
+
+### git checkout -b (branchname) 
+创建新分支并立即切换到该分支下，从而在该分支中操作。
+
+### git log --oneline --graph
+查看提交历史。--oneline 选项来查看历史记录的简洁的版本。 --graph 选项，查看历史中什么时候出现了分支、合并。
+
+### git tag -a v1.0
+给最新一次提交打上"v1.0"的标签。-a 选项意为"创建一个带注解的标签"。使用-a 时，Git 会打开编辑器，让你写一句标签注解。
 
 
 ## 同步本地仓库至远程仓库
